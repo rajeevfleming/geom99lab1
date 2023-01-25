@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- source: https://developers.google.com/maps/documentation/javascript/overview#maps_map_simple-html -->
+<html>
+  <head>
+    <title>Pligrimage to Mansarovar</title>
+    <h1> Route to Kailash, Mansarovar from Kathmandu</h1>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="scripy.js"></script>
+    <style>
+      /* setying the map height explicitly to define the size of the div
+       * element that contains the map. */
+       h1 {
+        color: blueviolet;
+        text-align: center;
+       } 
+       #map {
+          height: 100%;
+        }
+        html,
+        body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          color: royalblue
+        }
+    </style>
+    <!-- <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 27.71, lng: 85.32 },
+          zoom: 13,
+        });
+      }
+    </script> -->
+  </head>
+  <body>
+    <div id="map"></div>
+    <!-- USing Fleming_API_KEY text with provided key in class for property src in next line *** -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly" async>
+    </script>
+    <p>Mt. Kailash tour is an awe-inspiring holy yatra to the beautiful Mount Kailash and mesmerizing Lake Mansarovar. This spiritual trip is considered to be the holiest visit to the most exceptional form of the greatest Lord Shiva in a peculiar black granite contour. It is also spiritually thought provoking as it is the huge profound spot for four religions including Hindu, Buddhist, Jain and Bon. Acknowledged and worshipped by many all over the world, snow capped Mt. Kailash and the breathtaking mansarovar lake is the ultimate Tirtha Yatra for millions of pilgrims and devotees for grasping new meanings in life. A journey full of adventure, mystical temples and landscape, and wonderful snow capped mountains, lakes and surreal views makes Mt. Kailash tour worth a dream destination for many.</p>
+  <!-- Text source: https://travelhimalayan.com/ -->
+  </body>
+</html>
