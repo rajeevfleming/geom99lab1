@@ -24,10 +24,10 @@
 
   ], function(esriConfig,Map, MapView, FeatureLayer) {
 
-  esriConfig.apiKey = "AAPK8e186b91774640c895a4752dab136362f0kLRfM7_c3U61LPHlQdR-gA60gRj_6BPa8K3iCHTUsaCa8Wjn6St8sLZgkb4ppc";
+  //esriConfig.apiKey = "YOUR_API_KEY";
 
   const map = new Map({
-    basemap: "arcgis-imagery"
+    basemap: "osm"
   });
 
   const view = new MapView({
@@ -41,15 +41,14 @@
     url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/ArcGIS/rest/services/Garden_of_Dreams/FeatureServer/0"
   });
 
-  map.add(trailheadsLayer);
+  map.add(trailheadsLayer,0);
 
 //Trails feature layer (lines)
   const trailsLayer = new FeatureLayer({
     url: "https://services1.arcgis.com/pMeXRvgWClLJZr3s/ArcGIS/rest/services/Garden_of_Dreams/FeatureServer/1"
   });
 
-  map.add(trailsLayer, 0);
-
+  map.add(trailsLayer, 1);
   });
 </script>
 
